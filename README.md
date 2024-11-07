@@ -12,12 +12,13 @@
 ### Technical Requirements
 Technologies and tools used:
 <p>
-- Microsoft Visual Studio Code
-- Github
-- HTML, CSS, and Javascript
-- Free weather API key from [OpenWeatherMap](https://openweathermap.org/)
-- Slack, Zoom, and Google Docs (Team Collaboration)
-- Bootstrap CSS Framework 
+- Microsoft Visual Studio Code <br/>
+- Github <br/>
+- HTML, CSS, and Javascript <br/> 
+- Free weather API key from [OpenWeatherMap] (https://openweathermap.org/) <br/>
+- Slack, Zoom, and Google Docs (Team Collaboration) <br/>
+- Bootstrap CSS Framework <br/>
+- Figma (Wireframe & Prototype)
 </p>
 
 ---
