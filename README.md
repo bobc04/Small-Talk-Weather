@@ -5,7 +5,7 @@
 ---
 
 ### Description
-<p>This project is a team collaboration prerequisite and exercise for the FSF-PT-EAST-OCTOBER-100724-MTTH-CONS(B) Coding Bootcamp. The project is a web-based application that allows users to view real-time weather information by inputting a desired location and returning the current weather for the selected location. This application fetches current weather conditions and forecasts from a reliable API.</p>
+<p>This project is a team collaboration prerequisite and exercise for the FSF-PT-EAST-OCTOBER-100724-MTTH-CONS(B) Coding Bootcamp. The project is a web-based application that allows users to view weather conditions with clean and simple UI. This application updates weather dynamically by accessing LocalStorage data using JS.</p>
 
 ---
 
@@ -15,7 +15,6 @@ Technologies and tools used:
 - Microsoft Visual Studio Code <br/>
 - Github <br/>
 - HTML, CSS, and Javascript <br/> 
-- Free weather API key from [OpenWeatherMap] (https://openweathermap.org/) <br/>
 - Slack, Zoom, and Google Docs (Team Collaboration) <br/>
 - Bootstrap CSS Framework <br/>
 - Figma (Wireframe & Prototype)
@@ -44,7 +43,7 @@ We would like to extend our gratitude to the FSF-PT-EAST-OCTOBER-100724-MTTH-CON
 - Robert C.
 - Tarek S.
 - Meghan M.
-- Mateo V
+- Mateo V.
 - Simsong E.
 
 
