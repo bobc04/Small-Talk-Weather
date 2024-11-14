@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Small Talk Weather</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Weather App</h1>
-        <input type="text" id="locationInput" placeholder="Enter a city">
-        <button id="searchButton">Search</button>
-        <div class="weather-info">
-            <h2 id="location"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
+        <h1>Small Talk Weather</h1>
+        <div class="weather-display">
+            <!-- Main box for the primary city -->
+            <section class="card-city main-box">Weather Today in Main City</section>
+            
+            <!-- Four smaller boxes for additional cities -->
+            <div class="small-boxes">
+                <section class="card-city small-box" data-city="City1">City 1</section>
+                <section class="card-city small-box" data-city="City2">City 2</section>
+                <section class="card-city small-box" data-city="City3">City 3</section>
+                <section class="card-city small-box" data-city="City4">City 4</section>
+            </div>
         </div>
     </div>
+
     <script src="./assets/js/script.js"></script>
-<footer>
-    <p>©Small-Talk-Weather Team 2024</p>
-</footer>    
+    <footer>
+        <p>©Small-Talk-Weather Team 2024</p>
+    </footer>    
 </body>
 </html>
