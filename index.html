@@ -20,7 +20,7 @@
 
             <!-- Flexbox containing other weather conditions for the selected city -->
             <div class="small-boxes">
-                
+
                 <!-- Highest temperature in F/C -->
                 <section class="card-city small-box" data-city="City1">High</section>
 
@@ -37,11 +37,22 @@
     </div>
 
     <!-- Box containing temperature in F/C for Morning, Afternoon, and Evening -->
-    <div class="container">
+    <div class="container" id="forecast">
         <h1>Today's Forecast</h1>
-        <div>Morning</div>
-        <div>Afternoon</div>
-        <div>Evening</div>
+        <div>
+            <div>
+                <div>Morning</div>
+                <div id="morning-weather"></div>
+            </div>
+            <div>
+                <div>Afternoon</div>
+                <div id="afternoon-weather"></div>
+            </div>
+            <div>
+                <div>Evening</div>
+                <div id="evening-weather"></div>
+            </div>
+        </div>
     </div>
     <script src="./assets/js/script.js"></script>
     <footer>

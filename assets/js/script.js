@@ -52,3 +52,33 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load and display weather data
     loadCitiesData();
 });
+
+// Box containing temperature in F/C for Morning, Afternoon, and Evening
+let forecastEl = document.querySelector("#forecast");
+const morningEl = document.querySelector("#morning-weather");
+const afternoonEl = document.querySelector("#afternoon-weather");
+const eveningEl = document.querySelector("#evening-weather");
+
+
+const forecastData = {
+    morning: { tempC: 20, condition: "Sunny" },
+    afternoon: { tempC: 25, condition: "Partly Cloudy" },
+    evening: { tempC: 18, condition: "Cloudy" }
+};
+
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+function formatTemperature(tempC) {
+    const tempF = celsiusToFahrenheit(tempC);
+    return `${tempC}°C / ${tempF.toFixed(1)}°F`;
+}
+
+function updateWeather() {
+    morningEl.textContent = `${formatTemperature(forecastData.morning.tempC)} - ${forecastData.morning.condition}`;
+    afternoonEl.textContent = `${formatTemperature(forecastData.afternoon.tempC)} - ${forecastData.afternoon.condition}`;
+    eveningEl.textContent = `${formatTemperature(forecastData.evening.tempC)} - ${forecastData.evening.condition}`;
+}
+
+updateWeather();
