@@ -73,6 +73,7 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0;
+    position: relative;
 }
 
 
@@ -99,4 +100,18 @@ header {
 
 #navButton:hover {
     background-color: #0056b3;
+}
+
+.city-dropdown {
+    display: none;  
+    position: absolute;
+    top: 61px;
+    right: 0px;
+}
+
+#citySelector {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 21px;  
 }
