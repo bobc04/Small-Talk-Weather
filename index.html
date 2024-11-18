@@ -13,6 +13,7 @@
 <body>
     <div class="container">
         <h1>Small Talk Weather</h1>
+
         <!-- Dropdown for city selection -->
         <label for="citySelector">Select a City:</label>
         <select id="citySelector">
@@ -22,48 +23,32 @@
             <option value="3">New York</option>
             <option value="4">Chicago</option>
         </select>
-      
+
         <h1>Weather Today</h1>
         <div class="weather-display">
 
             <!-- Inline box contents: Weather Icon + City & State + Current Temp. (F/C) + Weather Condition -->
-            <section class="card-city main-box">Weather Today in Main City</section>            
+            <section class="card-city main-box">Weather Today in Main City</section>
             <!-- Four smaller boxes for additional data -->
             <div class="small-boxes">
                 <section class="card-city small-box" data-attribute="highTemp">High Temp</section>
                 <section class="card-city small-box" data-attribute="lowTemp">Low Temp</section>
                 <section class="card-city small-box" data-attribute="wind">Wind</section>
                 <section class="card-city small-box" data-attribute="humidity">Humidity</section>
-
-            <!-- Flexbox containing other weather conditions for the selected city -->
-            <div class="small-boxes">
-                
-                <!-- Highest temperature in F/C -->
-                <section class="card-city small-box" data-city="City1">High</section>
-
-                <!-- Lowest temperature in F & C -->
-                <section class="card-city small-box" data-city="City2">Low</section>
-
-                <!-- Wind Speed in MPH & km/h -->
-                <section class="card-city small-box" data-city="City3">Wind Speed</section>
-
-                <!-- Humidity in percentage -->
-                <section class="card-city small-box" data-city="City4">Humidity</section>
             </div>
         </div>
-    </div>
 
-    <!-- Box containing temperature in F/C for Morning, Afternoon, and Evening -->
-    <div class="container">
-        <h1>Today's Forecast</h1>
-        <div>Morning</div>
-        <div>Afternoon</div>
-        <div>Evening</div>
-    </div>
-    <script src="./assets/js/script.js"></script>
-    <footer>
-        <p>©Small-Talk-Weather Team 2024</p>
-    </footer>
+        <!-- Box containing temperature in F/C for Morning, Afternoon, and Evening -->
+        <div class="container">
+            <h1>Today's Forecast</h1>
+            <div>Morning</div>
+            <div>Afternoon</div>
+            <div>Evening</div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+        <footer>
+            <p>©Small-Talk-Weather Team 2024</p>
+        </footer>
 </body>
 
 </html>
