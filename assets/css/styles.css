@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(205, 236, 246);
+    margin: 0;
 }
 
 .container {
@@ -16,6 +17,11 @@ body {
 
 h1 {
     font-size: 24px;
+}
+
+#teamName {
+    transform: scale(1.25);  
+    transform-origin: center;
 }
 
 .weather-display {
@@ -46,4 +52,51 @@ h1 {
     background-color: #e8f7ff;
     text-align: center;
     font-size: 16px;
+}
+
+
+header {
+    display: flex;
+    background-color: #F8F8FF;
+    padding: 1px 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.logo {
+    width: 15%;
+    height: auto;
+    display: block;
+    padding: 0%;
+}
+
+
+
+
+#navButton {
+    background-color: #007bff;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+#navButton:hover {
+    background-color: #0056b3;
 }
