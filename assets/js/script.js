@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainBox = document.querySelector(".main-box");
     const smallBoxes = document.querySelectorAll(".small-box");
     const citySelector = document.getElementById("citySelector");
+    const cityDropdown = document.getElementById("cityDropdown");
+    const navButton = document.getElementById("navButton");
 
     // Sample weather data for five cities, including state, weather details, and icon
     const citiesData = [
@@ -67,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Event listener for dropdown menu
+    // Event listener for dropdown menu 
     citySelector.addEventListener("change", (event) => {
         const cityIndex = parseInt(event.target.value, 10);
         const data = JSON.parse(localStorage.getItem("citiesData"));
@@ -76,7 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
             updateMainBox(selectedCity);
             updateSmallBoxes(selectedCity);
         }
+        cityDropdown.style.display = "none";  // Hide the dropdown after selection
     });
+
+    // Event listener for toggle visibility
+    navButton.addEventListener("click", () => {
+        cityDropdown.style.display = cityDropdown.style.display === "none" ? "block" : "none";
+    });
+
 
     // Initial data setup (only if localStorage is empty or data is missing)
     if (!localStorage.getItem("citiesData")) {
