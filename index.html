@@ -12,11 +12,28 @@
 
 <body>
     <div class="container">
+        <h1>Small Talk Weather</h1>
+        <!-- Dropdown for city selection -->
+        <label for="citySelector">Select a City:</label>
+        <select id="citySelector">
+            <option value="0">Toronto</option>
+            <option value="1">Atlanta</option>
+            <option value="2">Orlando</option>
+            <option value="3">New York</option>
+            <option value="4">Chicago</option>
+        </select>
+      
         <h1>Weather Today</h1>
         <div class="weather-display">
 
             <!-- Inline box contents: Weather Icon + City & State + Current Temp. (F/C) + Weather Condition -->
-            <section class="card-city main-box">Weather Today in Main City</section>
+            <section class="card-city main-box">Weather Today in Main City</section>            
+            <!-- Four smaller boxes for additional data -->
+            <div class="small-boxes">
+                <section class="card-city small-box" data-attribute="highTemp">High Temp</section>
+                <section class="card-city small-box" data-attribute="lowTemp">Low Temp</section>
+                <section class="card-city small-box" data-attribute="wind">Wind</section>
+                <section class="card-city small-box" data-attribute="humidity">Humidity</section>
 
             <!-- Flexbox containing other weather conditions for the selected city -->
             <div class="small-boxes">
