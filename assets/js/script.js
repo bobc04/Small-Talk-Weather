@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainBox = document.querySelector(".main-box");
     const smallBoxes = document.querySelectorAll(".small-box");
     const citySelector = document.getElementById("citySelector");
-    const cityDropdown = document.getElementById("cityDropdown");
     const navButton = document.getElementById("navButton");
 
     // Sample weather data for five cities, including state, weather details, and icon
@@ -48,18 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Function to update the small boxes with specific weather attributes
-    function updateSmallBoxes(cityData) {
-        const highTempC = fahrenheitToCelsius(cityData.highTempF).toFixed(1);
-        const lowTempC = fahrenheitToCelsius(cityData.lowTempF).toFixed(1);
-
+     // Function to update the small boxes with specific weather attributes
+     function updateSmallBoxes(cityData) {
         const attributes = [
-            { label: "High Temp", value: `${cityData.highTempF} °F (${highTempC} °C)` },
-            { label: "Low Temp", value: `${cityData.lowTempF} °F (${lowTempC} °C)` },
+            { label: "High Temp", value: cityData.highTemp },
+            { label: "Low Temp", value: cityData.lowTemp },
             { label: "Wind", value: cityData.wind },
             { label: "Humidity", value: cityData.humidity },
         ];
-
         smallBoxes.forEach((box, index) => {
             const attribute = attributes[index];
             box.innerHTML = `
@@ -69,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Event listener for dropdown menu 
+    // Event listener for dropdown menu
     citySelector.addEventListener("change", (event) => {
         const cityIndex = parseInt(event.target.value, 10);
         const data = JSON.parse(localStorage.getItem("citiesData"));
@@ -78,14 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateMainBox(selectedCity);
             updateSmallBoxes(selectedCity);
         }
-        cityDropdown.style.display = "none";  // Hide the dropdown after selection
     });
-
-    // Event listener for toggle visibility
-    navButton.addEventListener("click", () => {
-        cityDropdown.style.display = cityDropdown.style.display === "none" ? "block" : "none";
-    });
-
 
     // Initial data setup (only if localStorage is empty or data is missing)
     if (!localStorage.getItem("citiesData")) {
@@ -95,3 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load and display weather data
     loadCitiesData();
 });
+
+// Reference modal 
+const cityModal = new bootstrap.Modal('#cityModal');
+
+// Call methods for modal
+$('#cityModal').modal('hide')
