@@ -29,7 +29,6 @@ h3 {
     font-size: 20px;
 }
 
-
 .weather-display {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +45,7 @@ h3 {
     text-align: left;
     display: inline;
     min-width: 280px;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .small-boxes {
