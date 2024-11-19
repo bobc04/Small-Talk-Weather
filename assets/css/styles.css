@@ -17,18 +17,18 @@ footer {
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 50px;
+    margin-top: 64px;
 }
 
 h1 {
     font-size: 24px;
+    padding-bottom: 32px;
 }
 
-#teamName {
-    transform: scale(1.25);  
-    transform-origin: center;
-    align-self: last baseline;
+h3 {
+    font-size: 20px;
 }
+
 
 .weather-display {
     display: flex;
@@ -39,13 +39,13 @@ h1 {
 .main-box {
     flex: 1;
     padding: 24px;
-    gap: 24px;
+    gap: 32px;
     border: 1px solid #ccc;
     border-radius: 12px;
     background-color: #E7F1FF;
     text-align: left;
-    display: inline-block;
-    min-width: 300px;
+    display: inline;
+    min-width: 280px;
 }
 
 .small-boxes {
@@ -57,12 +57,13 @@ h1 {
 }
 
 .small-box {
+    min-width: 92px;
     padding: 24px;
     border: 1px solid #ccc;
     border-radius: 12px;
     background-color: #E7F1FF;
     text-align: left;
-    font-size:24px;
+    font-size: 1.5rem;
     color: #000;
 }
 
@@ -127,4 +128,12 @@ header {
     margin: auto;
 }
 
+#weatherToday {
+    background-image: url('https://raw.githubusercontent.com/bobc04/Small-Talk-Weather/main/assets/images/bg/clear.png');
+    background-size: cover;
+    background-position: center;
+}
 
+.top-header {
+    color: #fff;
+}
