@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        
+
 </head>
 
 <body>
@@ -43,9 +43,9 @@
 
     <!-- Weather Today Container -->
 
-    <div class="container" id = "weatherToday" style="background-color: #010C1A;">
+    <div class="container" id="weatherToday" style="background-color: #010C1A;">
         <h1 class="top-header">Weather Today</h1>
-      
+
         <div class="weather-display">
 
             <!-- City Overview Card: Weather Icon + City & State + Current Temp. (F/C) + Weather Condition -->
@@ -73,19 +73,25 @@
         <!-- Temperature in F/C for Morning, Afternoon, and Evening -->
         <div class="container" id="forecast">
             <h1 class="container-header">Today's Forecast</h1>
+            <div class="row" id="row-morning">
+                <div class="col-xs-">
+                    <p class="row-label">Morning</p>
+                </div>
+                <div class="col-xs-" id="morning-weather"></div>
+            </div>
+            <div class="row" id="row-afternoon">
+                <div class="col-xs-">
+                    <p class="row-label">Afternoon</p>
+                </div>
+                <div class="col-xs-" id="afternoon-weather"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-">
+                    <p class="row-label">Evening</p>
+                </div>
+                <div class="col-xs-" id="evening-weather"></div>
+            </div>
             <div>
-                <div>
-                    <div>Morning</div>
-                    <div id="morning-weather"></div>
-                </div>
-                <div>
-                    <div>Afternoon</div>
-                    <div id="afternoon-weather"></div>
-                </div>
-                <div>
-                    <div>Evening</div>
-                    <div id="evening-weather"></div>
-                </div>
             </div>
         </div>
     </div>
@@ -106,7 +112,9 @@
                 <div class="modal-body">
                     <div class="modal-body">
                         <!-- Dropdown for cities -->
-                        <label for="citySelector"><h3>What's the weather like in:</h3></label>
+                        <label for="citySelector">
+                            <h3>What's the weather like in:</h3>
+                        </label>
                         <select id="citySelector">
                             <option value="0">Toronto</option>
                             <option value="1">Atlanta</option>

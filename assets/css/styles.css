@@ -124,9 +124,10 @@ header {
 }
 
 #morning-weather, #afternoon-weather, #evening-weather {
-    font-size: 16px;
+    font-size: 28px;
     text-align: center;
     margin: auto;
+    padding: 1rem;
 }
 
 #weatherToday {
@@ -137,4 +138,29 @@ header {
 
 .top-header {
     color: #fff;
+}
+
+#forecast {
+    font-size:16px;
+    font-weight: 500;
+}
+
+.row {
+    padding-left: 24px;
+    align-items: center;
+}
+
+.row-label {
+    color: #152536;
+    width: 200px;
+}
+
+#row-morning {
+    padding-left: ;
+    border-bottom: 1px solid #62ABF9;
+}
+
+#row-afternoon {
+    padding-left: ;
+    border-bottom: 1px solid #62ABF9;
 }
