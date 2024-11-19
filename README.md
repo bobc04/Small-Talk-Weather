@@ -1,5 +1,5 @@
 # Small-Talk-Weather
-----
+---
 ### Group collaboration to build an awesome Small-Talk-Weather Application.
 
 ---
@@ -27,7 +27,7 @@ Technologies and tools used:
 This project is licensed under the MIT free software agreement. The Small-Talk-Weather Team is the copyright holder but grants permission to use, modify, and distribute the application.
 </p>
 
-----
+---
 
 ### Credits
 <p>
@@ -45,6 +45,11 @@ We would like to extend our gratitude to the FSF-PT-EAST-OCTOBER-100724-MTTH-CON
 - Meghan M.
 - Mateo V.
 - Simsong E.
+
+---
+
+#### Demo
+https://github.com/user-attachments/assets/9184666a-e234-4a07-9737-9fc4cb94c4e4
 
 
 
