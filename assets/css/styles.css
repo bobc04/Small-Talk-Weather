@@ -22,7 +22,6 @@ footer {
 
 h1 {
     font-size: 24px;
-    padding-bottom: 16px;
 }
 
 #teamName {
@@ -128,10 +127,4 @@ header {
     margin: auto;
 }
 
-.top-header {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-
-}
 
