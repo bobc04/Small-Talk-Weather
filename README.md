@@ -1,4 +1,5 @@
-# Small-Talk-Weather
+# Small Talk Weather
+# 🔗https://bobc04.github.io/Small-Talk-Weather/
 ---
 ### Group collaboration to build an awesome Small-Talk-Weather Application.
 
@@ -52,7 +53,8 @@ We would like to extend our gratitude to the FSF-PT-EAST-OCTOBER-100724-MTTH-CON
 ![image](https://github.com/user-attachments/assets/1957cac4-975a-4fa8-ab3d-eb337531f45f)
 
 #### Demo
-https://github.com/user-attachments/assets/81ace469-40de-4db1-b2b8-f046f65a0ab9
+https://github.com/user-attachments/assets/76e08a4b-2bf0-4dfb-8537-b0c1ef6fd134
+
 
 
 
