@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to update the main box with city data
   function updateMainBox(cityData) {
     mainBox.innerHTML = `
-            <img src="./assets/images/icon/${cityData.icon}" alt="Weather Icon" style="width: 80px; height: 80px; margin-bottom: 24px;">
+            <img src="./assets/images/icon/${cityData.icon}" alt="Weather Icon" style="width: 80px; height: 80px; margin-bottom: 24px;"><br>
               <strong>${cityData.city}</strong><br>
               High Temp: ${cityData.highTemp}<br>
               Low Temp: ${cityData.lowTemp}<br>
