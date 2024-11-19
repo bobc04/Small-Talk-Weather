@@ -1,9 +1,7 @@
 # Small Talk Weather
-# 🔗https://bobc04.github.io/Small-Talk-Weather/
+### 🔗https://bobc04.github.io/Small-Talk-Weather/
 ---
-### Group collaboration to build an awesome Small-Talk-Weather Application.
-
----
+### Group Collaboration to Develop Simple Weather Application
 
 ### Description
 <p>This project is a team collaboration prerequisite and exercise for the FSF-PT-EAST-OCTOBER-100724-MTTH-CONS(B) Coding Bootcamp. The project is a web-based application that allows users to view weather conditions with clean and simple UI. This application updates weather dynamically by accessing LocalStorage data using JS.</p>
@@ -49,10 +47,12 @@ We would like to extend our gratitude to the FSF-PT-EAST-OCTOBER-100724-MTTH-CON
 
 ---
 
-#### Screenshot
-![image](https://github.com/user-attachments/assets/1957cac4-975a-4fa8-ab3d-eb337531f45f)
+# Screenshot
+![image](https://github.com/user-attachments/assets/f7e58348-1e5f-4432-abfc-59e1191e3c7a)
+![image](https://github.com/user-attachments/assets/4e12ec02-c441-4d52-b587-2212326788e2)
 
-#### Demo
+
+# Demo
 https://github.com/user-attachments/assets/76e08a4b-2bf0-4dfb-8537-b0c1ef6fd134
 
 
