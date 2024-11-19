@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainBox = document.querySelector(".main-box");
     const smallBoxes = document.querySelectorAll(".small-box");
     const citySelector = document.getElementById("citySelector");
-    const cityDropdown = document.getElementById("cityDropdown");
-    const navButton = document.getElementById("navButton");
+
 
     // Sample weather data for five cities to store in localStorage
     const citiesData = [
@@ -16,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lowTemp: "50 °F",
             wind: "10 mph",
             humidity: "65%",
+            icon: "cloudy.png",
         },
         {
             city: "Atlanta",
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lowTemp: "65 °F",
             wind: "5 mph",
             humidity: "50%",
+            icon: "clear.png",
         },
         {
             city: "Orlando",
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lowTemp: "70 °F",
             wind: "8 mph",
             humidity: "60%",
+            icon: "light-rain.png",
         },
         {
             city: "New York",
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lowTemp: "58 °F",
             wind: "12 mph",
             humidity: "55%",
+            icon: "light-rain.png",
         },
         {
             city: "Chicago",
@@ -44,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lowTemp: "52 °F",
             wind: "15 mph",
             humidity: "70%",
+            icon: "very-cloudy.png",
         },
     ];
 
@@ -67,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to update the main box with city data
     function updateMainBox(cityData) {
         mainBox.innerHTML = `
+            <img src="./assets/images/icon/${cityData.icon}" alt="Weather Icon" style="width: 50px; height: 50px; margin-bottom: 10px;">
               <strong>${cityData.city}</strong><br>
               High Temp: ${cityData.highTemp}<br>
               Low Temp: ${cityData.lowTemp}<br>
@@ -104,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         cityDropdown.style.display = "none"; // Hide the dropdown after selection
     });
-    
+
     // Initial data setup (only if localStorage is empty or data is missing)
     if (!localStorage.getItem("citiesData")) {
         saveCitiesData(citiesData);
@@ -139,7 +144,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// Reference modal 
-const cityModal = new bootstrap.Modal('#cityModal');
-// Call methods for modal
-$('#cityModal').modal('hide')
