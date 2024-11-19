@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             city: "Toronto",
             state: "Ontario",
-            currentTemp: "55 °F",
+            currentTemp: "55",
             highTemp: "60 °F",
             lowTemp: "50 °F",
             wind: "10 mph",
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             city: "Atlanta",
             state: "Georgia",
-            currentTemp: "70 °F",
+            currentTemp: "70",
             highTemp: "75 °F",
             lowTemp: "65 °F",
             wind: "5 mph",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             city: "Orlando",
             state: "Florida",
-            currentTemp: "80 °F",
+            currentTemp: "80",
             highTemp: "85 °F",
             lowTemp: "70 °F",
             wind: "8 mph",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             city: "New York",
             state: "New York",
-            currentTemp: "65 °F",
+            currentTemp: "65",
             highTemp: "68 °F",
             lowTemp: "58 °F",
             wind: "12 mph",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             city: "Chicago",
             state: "Illinois",
-            currentTemp: "60 °F",
+            currentTemp: "60",
             highTemp: "62 °F",
             lowTemp: "52 °F",
             wind: "15 mph",
@@ -96,10 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to update the main box with city data
     function updateMainBox(cityData) {
+        let celsius = fahrenheitToCelsius(cityData.currentTemp)
         mainBox.innerHTML = `
             <img src="./assets/images/icon/${cityData.icon}" alt="Weather Icon" style="width: 80px; height: 80px; margin-bottom: 24px;"><br>
               <strong>${cityData.city}, ${cityData.state}</strong><br>
-              Current Temp: ${cityData.currentTemp}°F / ${fahrenheitToCelsius(cityData.currentTemp).toFixed(1)}°C
+              Current Temp: ${cityData.currentTemp}°F / ${celsius.toFixed(1)}°C
           `;
     }
 
