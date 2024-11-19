@@ -127,3 +127,10 @@ header {
     text-align: center;
     margin: auto;
 }
+
+.top-header {
+    font-size: 24px;
+    line-height: 0%;
+
+}
+
