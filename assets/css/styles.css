@@ -3,16 +3,12 @@ body {
     background-color: rgb(205, 236, 246);
     margin: 0;
 }
+
 footer {
     text-align: center;
     padding: 1rem;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-/* Classs */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -22,6 +18,15 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#teamName {
+    transform: scale(1.25);  
+    transform-origin: center;
 }
 
 .weather-display {
@@ -55,12 +60,6 @@ h1 {
 }
 
 
-#morning-weather, #afternoon-weather, #evening-weather {
-    font-size: 16px;
-    text-align: center;
-    margin: auto;
-=======
-
 header {
     display: flex;
     background-color: #F8F8FF;
@@ -69,6 +68,7 @@ header {
     align-items: center;
     width: 100%;
 }
+
 
 .navbar {
     display: flex;
@@ -81,6 +81,7 @@ header {
     position: relative;
 }
 
+
 .logo {
     width: 15%;
     height: auto;
@@ -90,30 +91,6 @@ header {
 
 
 
-.city-dropdown {
-    display: none;  
-    position: absolute;
-    top: 61px;
-    right: 0px;
-}
-
-/* ID */
-#teamName {
-    transform: scale(1.25);  
-    transform-origin: center;
-}
-
-#citySelector {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    font-size: 21px;  
-}
-
-
-#navButton:hover {
-    background-color: #0056b3;
-}
 
 #navButton {
     background-color: #007bff;
@@ -124,5 +101,28 @@ header {
     text-align: center;
     font-size: 16px;
 }
-=======
 
+
+#navButton:hover {
+    background-color: #0056b3;
+}
+
+.city-dropdown {
+    display: none;  
+    position: absolute;
+    top: 61px;
+    right: 0px;
+}
+
+#citySelector {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 21px;  
+}
+
+#morning-weather, #afternoon-weather, #evening-weather {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
