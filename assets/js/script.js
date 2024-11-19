@@ -110,8 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
         cityDropdown.style.display = "none"; // Hide the dropdown after selection
     });
 
-    // Event listener for toggle visibility
-
     // Initial data setup (only if localStorage is empty or data is missing)
     if (!localStorage.getItem("citiesData")) {
         saveCitiesData(citiesData);
@@ -119,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Load and display weather data
     loadCitiesData();
+
     // Box containing temperature in F/C for Morning, Afternoon, and Evening
     let forecastEl = document.querySelector("#forecast");
     const morningEl = document.querySelector("#morning-weather");
