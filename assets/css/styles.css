@@ -129,7 +129,7 @@ header {
 }
 
 #weatherToday {
-    background-image: url('https://raw.githubusercontent.com/bobc04/Small-Talk-Weather/main/assets/images/bg/clear.png');
+    background-image: url(../images/bg/clear.png);
     background-size: cover;
     background-position: center;
 }
